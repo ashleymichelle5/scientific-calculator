@@ -25,8 +25,7 @@ A fully functional scientific calculator built with HTML, CSS, and JavaScript.
 2. Open index.html in your browser
 
 ## Live Demo
-
-Coming soon...
+https://ashleymichelle5.github.io/scientific-calculator/
 
 ## Author
 
