@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(135deg, #a8c8ff 0%, #c5a8ff 40%, #a8e8d8 100%);
+}
+
+/* Floating blobs behind the calculator */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+body::before {
+  width: 400px;
+  height: 400px;
+  background: rgba(120, 160, 255, 0.5);
+  top: -80px;
+  left: -80px;
+}
+
+body::after {
+  width: 350px;
+  height: 350px;
+  background: rgba(180, 120, 255, 0.5);
+  bottom: -60px;
+  right: -60px;
+}
+
+.calculator {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 32px;
+  padding: 24px;
+  width: 340px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 25px 60px rgba(80, 100, 200, 0.2),
+    0 8px 32px rgba(80, 100, 200, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #1a1f4e;
+  font-family: 'DM Mono', monospace;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: right;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  min-height: 90px;
+  word-break: break-all;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    inset 0 2px 10px rgba(100, 130, 200, 0.1),
+    0 4px 15px rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  letter-spacing: -0.5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.3);
+  color: #2d3561;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 2px 8px rgba(100, 130, 200, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.55);
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 20px rgba(100, 130, 200, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+button:active {
+  transform: translateY(0px) scale(0.96);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-scientific {
+  background: rgba(200, 185, 255, 0.3);
+  color: #4a3aaa;
+  border-color: rgba(200, 185, 255, 0.5);
+  font-size: 13px;
+}
+
+.btn-scientific:hover {
+  background: rgba(200, 185, 255, 0.55);
+}
+
+.btn-clear {
+  background: rgba(255, 180, 180, 0.3);
+  color: #cc3333;
+  border-color: rgba(255, 180, 180, 0.5);
+}
+
+.btn-clear:hover {
+  background: rgba(255, 180, 180, 0.55);
+}
+
+.btn-operator {
+  background: rgba(180, 220, 255, 0.3);
+  color: #1a5fa8;
+  border-color: rgba(180, 220, 255, 0.5);
+  font-size: 18px;
+}
+
+.btn-operator:hover {
+  background: rgba(180, 220, 255, 0.55);
+}
+
+.btn-equals {
+  background: rgba(100, 130, 255, 0.6);
+  color: white;
+  border-color: rgba(150, 170, 255, 0.5);
+  font-size: 20px;
+  box-shadow:
+    0 4px 15px rgba(100, 130, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-equals:hover {
+  background: rgba(100, 130, 255, 0.8);
+  box-shadow: 0 8px 25px rgba(100, 130, 255, 0.5);
+}
+
+.btn-number {
+  background: rgba(255, 255, 255, 0.35);
+  color: #1a1f4e;
+}
