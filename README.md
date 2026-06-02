@@ -1,33 +1,57 @@
 # Scientific Calculator 🧮
 
 A fully functional scientific calculator built with HTML, CSS, and JavaScript.
+Featuring a modern glassmorphism UI design that is fully responsive across all devices.
 
-## Features
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-- Basic operations: addition, subtraction, multiplication, division
-- Scientific functions: sin, cos, tan, square root, power, log
-- Keyboard support
-- Backspace and clear buttons
-- Positive/negative toggle and percentage
-- Glassmorphism UI design
+## Live Demo 🌐
+🔗 [scientific-calculator](https://ashleymichelle5.github.io/scientific-calculator/)
 
-## Technologies Used
+---
 
-- HTML5
-- CSS3 (Glassmorphism, CSS Grid, Flexbox)
-- Vanilla JavaScript
+## Features ✨
 
-## How to Use
+- **Basic operations** — addition, subtraction, multiplication, division
+- **Scientific functions** — sin, cos, tan, square root, power, log
+- **Keyboard support** — use your keyboard to type calculations
+- **Backspace & clear** — easily correct mistakes
+- **Positive/negative toggle** — flip numbers between positive and negative
+- **Percentage button** — instant percentage calculations
+- **Glassmorphism UI** — modern frosted glass design
+- **Fully responsive** — works beautifully on desktop, tablet, and mobile
+
+---
+
+## Technologies Used 🛠️
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Structure and layout |
+| CSS3 | Glassmorphism, Grid, Flexbox, Media Queries |
+| Vanilla JavaScript | Logic, DOM manipulation, keyboard events |
+
+---
+
+## Getting Started 🚀
 
 1. Clone the repository:
-   git clone https://github.com/ashleymichelle5/scientific-calculator.git
+```bash
+git clone https://github.com/ashleymichelle5/scientific-calculator.git
+```
 
-2. Open index.html in your browser
+2. Navigate into the folder:
+```bash
+cd scientific-calculator
+```
 
-## Live Demo
-https://ashleymichelle5.github.io/scientific-calculator/
+3. Open `index.html` in your browser — no installations needed!
 
-## Author
+---
 
-Ashley Sanchez
-GitHub: https://github.com/ashleymichelle5
+## Author 👩🏻‍💻
+
+**Ashley Sanchez**
+- GitHub: [@ashleymichelle5](https://github.com/ashleymichelle5)
