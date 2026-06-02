@@ -15,7 +15,7 @@ body {
   background: linear-gradient(135deg, #a8c8ff 0%, #c5a8ff 40%, #a8e8d8 100%);
 }
 
-/* Floating blobs behind the calculator */
+
 body::before,
 body::after {
   content: '';
@@ -171,4 +171,59 @@ button:active {
 .btn-number {
   background: rgba(255, 255, 255, 0.35);
   color: #1a1f4e;
+}
+
+/* Tablet */
+@media (max-width: 480px) {
+body {
+    padding: 20px;
+    align-items: center;
+}
+
+.calculator {
+    width: 100%;
+    padding: 18px;
+    border-radius: 24px;
+}
+
+.display {
+    font-size: 28px;
+    min-height: 75px;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.buttons {
+    gap: 8px;
+}
+
+button {
+    padding: 14px 8px;
+    font-size: 13px;
+    border-radius: 12px;
+}
+
+.btn-scientific {
+    font-size: 11px;
+}
+
+.btn-operator {
+    font-size: 16px;
+}
+
+.btn-equals {
+    font-size: 18px;
+ }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .display {
+    font-size: 24px;
+}
+
+button {
+    padding: 12px 6px;
+    font-size: 12px;
+  }
 }
